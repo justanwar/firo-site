@@ -19,3 +19,5 @@ jobs:
         run: bundle exec jekyll build
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
+        with:
+          path: /home/runner/work/firo-site/firo-site/_site/
