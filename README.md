@@ -9,3 +9,4 @@ The current versions and hashes of the wallets in the Downloads page are stored 
 ## Contributing
 
 Please make sure to read the [guidelines for contributors and maintainers](CONTRIBUTING.md) before opeing a pull request.
+
