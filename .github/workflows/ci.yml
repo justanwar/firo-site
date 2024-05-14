@@ -19,7 +19,7 @@ jobs:
         run: bundle exec jekyll build
       - uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: .
+          source-dir: ./_site
           custom-url: justanwar.github.io
           preview-branch: gh-pages
           umbrella-dir: pr-preview
