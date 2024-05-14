@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 # gem "rails"
-group: group :jekyll_plugins do
+group :jekyll_plugins do
     gem "jekyll", "~> 4.3"
 
     gem "jekyll-paginate", "~> 1.1"
