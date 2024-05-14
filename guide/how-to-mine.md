@@ -15,7 +15,7 @@ The FiroPoW mining algorithm (a modified version of ProgPoW 0.9.4) is designed t
 
 We believe in the importance of fair distribution in FIRO and remain committed to having it mineable using commodity hardware like GPUs.
 
-Before you begin, make sure you have a Firo (FIRO) address where you want your mining payouts to go to. To get one, download a [Firo wallet](https://firo.org/get-firo/download/) and sync it with the network. 
+Before you begin, make sure you have a Firo (FIRO) address where you want your mining payouts to go to. To get one, download a [Firo wallet]({{ site.baseurl }}/get-firo/download/) and sync it with the network. 
 
 The guide is meant for Windows users though Linux users can easily adapt it.
 
@@ -46,18 +46,13 @@ There are several pools running Firo on FiroPoW. Please try to spread the hashra
 * [Zergpool](http://zergpool.com)
     * firopow.mine.zergpool.com:3001
     * firopow.eu.mine.zergpool.com:3001
-* [Solo Pool](https://firo.solopool.org/)
-    * s3.solopool.org:8014
-* [Cruxpool](https://www.cruxpool.com/firo)
-    * firo.cruxpool.com:2222
 * [Speedpool](https://mining.speedpool.top/pool/firo)
     * mining.speedpool.top:7000
 * [Minerpool](https://firo.minerpool.org/)
     * firo-us-east.minerpool.org:14058
     * firo-eu.minerpool.org:14058
-* [BadHasher](https://badhasher.com/pool/Firo)
-    * us-stratum.badhasher.com:3318
 * [K1Pool](https://k1pool.com/pool/firo)
+    * eu.firo.k1pool.com:3476
     * us.firo.k1pool.com:3476
 * For detailed stratum information, please visit the pool's own site.
 
@@ -70,25 +65,43 @@ Open your favourite text editor, cut and paste the following line corresponding 
 ### For Pool Mining
 
 Firominer:
+
 * Nvidia:
- `firominer -U -P stratum+tcp://username.worker:password@POOLADDRESS:PORT`
+
+```
+firominer -U -P stratum+tcp://username.worker:password@POOLADDRESS:PORT
+```
+
 * AMD:
-`firominer -G -P stratum+tcp://username.worker:password@POOLADDRESS:PORT`
+
+```
+firominer -G -P stratum+tcp://username.worker:password@POOLADDRESS:PORT
+```
 
 T-Rex Miner (Nvidia):
-`t-rex.exe -a firopow -o stratum+tcp://POOLADDRESS:PORT -u username.worker -p password`
+
+```
+t-rex.exe -a firopow -o stratum+tcp://POOLADDRESS:PORT -u username.worker -p password
+```
 
 Team Red Miner (AMD):
-`teamredminer.exe -a firopow -o stratum+tcp://POOLADDRESS:PORT -u username.worker -p password`
+
+```
+teamredminer.exe -a firopow -o stratum+tcp://POOLADDRESS:PORT -u username.worker -p password
+```
 
 SRBMiner-Multi (AMD):
-`SRBMiner-MULTI.exe --disable-cpu --algorithm firopow --pool POOLADDRESS:PORT --wallet username.worker --gpu-boost 3`
+
+```
+SRBMiner-MULTI.exe --disable-cpu --algorithm firopow --pool POOLADDRESS:PORT --wallet username.worker --gpu-boost 3
+```
 
 After pasting it in, save the file as a .bat file (for e.g. **miner.bat**) in the same folder where you had extracted the miner binary earlier. 
 
 ### For Solo Mining
 
 You will need to edit **firo.conf** to allow RPC calls. Navigate to the [default data directory](https://github.com/firoorg/firo/wiki/Default-data-directories), create a file called **firo.conf,** and add and modify these lines:
+
 ```
 rpcuser=RPCUSER (up to you to change)
 rpcpassword=RPCPASSWORD (up to you to change)
@@ -98,9 +111,12 @@ listen=1
 server=1
 daemon=1
 ```
+
 Once this is done, restart your Firo wallet and ensure it is synced to the latest block. Then make a new file called miner.bat as below and save it in the same folder as where you had extracted the miner binary earlier.
 
-`firominer -P http://RPCUSER:RPCPASSWORD@127.0.0.1:8382 --reward-address YOURFIROADDRESS`
+```
+firominer -P http://RPCUSER:RPCPASSWORD@127.0.0.1:8382 --reward-address YOURFIROADDRESS
+```
 
 Please ensure that the line in **miner.bat** matches the relevant settings from **firo.conf** such as rpcuser, rpcpassword, and rpcport.
 

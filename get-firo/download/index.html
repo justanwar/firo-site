@@ -26,7 +26,7 @@ permalink: /get-firo/download/index.html
                         <p>{% t download.verify %} <a href="https://github.com/firoorg/firo/blob/master/reuben.asc" target="_blank">{% t download.verify1 %}</a></p>
                     </div>
                     <div class="col">
-                        <p>{% t download.guide %} <a href="https://firo.org/guide/" target="_blank">{% t download.guide1 %}</a></p>
+                        <p>{% t download.guide %} <a href="{{ site.baseurl }}/guide/" target="_blank">{% t download.guide1 %}</a></p>
                     </div>
               </div>
               <div class="row desk-wallets">
@@ -66,9 +66,8 @@ permalink: /get-firo/download/index.html
                                     </div>
                               </div>
                             </div>
-                            <div class="source">
-                                <a href="https://github.com/firoorg/firo" target="_blank"><i class="icon-github"></i></a>
-                                <a href="https://sourceforge.net/projects/firoorg/" target="_blank"><i class="icon-sourceforge"></i></a>
+                            <div class="system flathub">
+                                <a href="https://flathub.org/apps/org.firo.firo-qt">{% t download.downloadqtflathub %}</a>
                             </div>
                         </div>
                     </div>
@@ -171,30 +170,7 @@ permalink: /get-firo/download/index.html
                         <h2>{% t download.officialmobile %}</h2>
                   </div>
               </div>
-              <div class="row desk-wallets mob">
-                    <div class="col">
-                        <p class="tagline">{% t download.optionmob1 %}</p>
-                        <div class="inner">
-                            <h3>{% t download.androidmob %}</h3>
-                            <p class="wversion">v0.1.23</p>
-                            <p class="changelog"><a href="https://github.com/firoorg/mobile/releases/latest" target="_blank">{% t download.changelog %}</a></p>
-                            <div class="system android">
-                                <a href="https://github.com/firoorg/mobile/releases/latest" target="_blank">{% t download.downloadmobandroid %}</a>
-                                <div class="tab">
-                                    <input type="checkbox" id="an1">
-                                    <label class="tab-label" for="an1">{% t download.hashesandroid %}</label>
-                                    <div class="tab-content">
-                                      <p>{{ site.data.downloads.firo_mobile }}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="source">
-                                <a href="https://github.com/firoorg/mobile" target="_blank"><i class="icon-github"></i></a>
-                                <!--a href="https://sourceforge.net/projects/firoorg/" target="_blank"><i class="icon-sourceforge"></i></a-->
-                            </div>
-                        </div>
-                    </div>
-                    
+              <div class="row desk-wallets mob">                 
                     <div class="col">
                         <p class="tagline">{% t download.optionmob3 %}</p>
                         <div class="inner">
@@ -241,7 +217,7 @@ permalink: /get-firo/download/index.html
               </div>
               <div class="row mob-wallets">
 		      <div class="col">
-                              <img class="ext-wallets" src="/img/mobile-wallets/now-wallet-logo.png" alt="NOW Wallet logo" loading="lazy"/>
+                              <img class="ext-wallets" src="/img/mobile-wallets/now-wallet-logo.png" alt="NOW Wallet logo" loading="lazy">
                               <h4>NOW Wallet</h4>
                               <ul class="row">
                                  <li class="col">
@@ -257,7 +233,7 @@ permalink: /get-firo/download/index.html
                               </ul>
                           </div>
                           <div class="col">
-                              <img class="ext-wallets" src="/img/mobile-wallets/zelcore.png" alt="ZelCore Wallet Logo" loading="lazy"/>
+                              <img class="ext-wallets" src="/img/mobile-wallets/zelcore.png" alt="ZelCore Wallet Logo" loading="lazy">
                               <h4>ZelCore Wallet</h4>
                               <ul class="row">
                                  <li class="col">
@@ -278,7 +254,7 @@ permalink: /get-firo/download/index.html
                               </ul>
                           </div>
                           <div class="col">
-                              <img class="ext-wallets" src="/img/mobile-wallets/guarda-new.png" alt="Guarda Wallet logo" loading="lazy"/>
+                              <img class="ext-wallets" src="/img/mobile-wallets/guarda-new.png" alt="Guarda Wallet logo" loading="lazy">
                               <h4>Guarda Wallet</h4>
                               <ul class="row">
                                  <li class="col">
@@ -304,7 +280,7 @@ permalink: /get-firo/download/index.html
                               </ul>
                           </div>
                           <div class="col">
-                              <img class="ext-wallets" src="/img/mobile-wallets/trust.png" alt="Trust Wallet logo" loading="lazy"/>
+                              <img class="ext-wallets" src="/img/mobile-wallets/trust.png" alt="Trust Wallet logo" loading="lazy">
                               <h4>Trust Wallet</h4>
                               <ul class="row">
                                  <li class="col">
@@ -320,7 +296,7 @@ permalink: /get-firo/download/index.html
                               </ul>
                           </div>
                           <div class="col">
-                              <img class="ext-wallets" src="/img/mobile-wallets/coinomi.png" alt="Coinomi Wallet logo" loading="lazy"/>
+                              <img class="ext-wallets" src="/img/mobile-wallets/coinomi.png" alt="Coinomi Wallet logo" loading="lazy">
                               <h4>Coinomi Wallet</h4>
                               <ul class="row">
                                  <li class="col">
@@ -341,7 +317,7 @@ permalink: /get-firo/download/index.html
                               </ul>
                           </div>
                           <div class="col">
-                              <img class="ext-wallets" src="/img/mobile-wallets/edge.png" alt="Wdge Wallet logo" loading="lazy"/>
+                              <img class="ext-wallets" src="/img/mobile-wallets/edge.png" alt="Wdge Wallet logo" loading="lazy">
                               <h4>Edge Wallet</h4>
                               <ul class="row">
                                  <li class="col">
@@ -357,7 +333,7 @@ permalink: /get-firo/download/index.html
                               </ul>
                           </div>
                           <div class="col">
-                              <img class="ext-wallets" src="/img/mobile-wallets/cobo.png" alt="Cobo Wallet logo" loading="lazy"/>
+                              <img class="ext-wallets" src="/img/mobile-wallets/cobo.png" alt="Cobo Wallet logo" loading="lazy">
                               <h4>Cobo Wallet</h4>
                               <ul class="row">
                                  <li class="col">
@@ -373,7 +349,7 @@ permalink: /get-firo/download/index.html
                               </ul>
                           </div>
                           <div class="col">
-                              <img class="ext-wallets" src="/img/mobile-wallets/ownbit.png" alt="Ownbit Wallet logo" loading="lazy"/>
+                              <img class="ext-wallets" src="/img/mobile-wallets/ownbit.png" alt="Ownbit Wallet logo" loading="lazy">
                               <h4>Ownbit Wallet</h4>
                               <ul class="row">
                                  <li class="col">
