@@ -3,13 +3,14 @@
 source "https://rubygems.org"
 
 # gem "rails"
+group: group :jekyll_plugins do
+    gem "jekyll", "~> 4.3"
 
-gem "jekyll", "~> 4.3"
+    gem "jekyll-paginate", "~> 1.1"
 
-gem "jekyll-paginate", "~> 1.1"
+    gem "jekyll-multiple-languages-plugin", "~> 1.8"
 
-gem "jekyll-multiple-languages-plugin", "~> 1.8"
+    gem "jekyll-feed", "~> 0.17.0"
 
-gem "jekyll-feed", "~> 0.17.0"
-
-gem "jekyll-sitemap", "~> 1.4"
+    gem "jekyll-sitemap", "~> 1.4"
+end
