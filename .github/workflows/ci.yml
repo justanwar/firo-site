@@ -16,9 +16,7 @@ jobs:
       - name: bundle install
         run: bundle install
       - name: build website
-        run: |
-          bundle exec jekyll build
-          ls
+        run: bundle exec jekyll build
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
