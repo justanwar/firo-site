@@ -1,1 +1,1 @@
-Sitemap: https://firo.org/sitemap.xml
+Sitemap: https://firo.org/PREVIEW_PATH/sitemap.xml
