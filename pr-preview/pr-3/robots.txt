@@ -1,1 +1,1 @@
-Sitemap: https://firo.org/justanwar.github.io/firo-site/pr-preview/pr-3/sitemap.xml
+Sitemap: https://firo.org/sitemap.xml
