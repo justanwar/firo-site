@@ -23,6 +23,17 @@
                           <h4>{% t footer.newsletter %}</h4>
                           <p>{% t footer.ifsub %}</p>
                           <a class="btn-text" href="https://t.me/fironews" target="_blank"><span>{% t footer.newsbutton %}</span><i class="icons-right-small"></i></a>
+                          <form action="https://buttondown.com/api/emails/embed-subscribe/YOUR-BUTTONDOWN-USERNAME" method="post" class="embeddable-buttondown-form">
+                            <label for="email">Subscribe to our newsletter</label>
+                            <input type="email" name="email" placeholder="you@example.com" />
+                            <input type="hidden" value="1" name="embed" />
+                            <input type="submit" value="Subscribe" />
+                            <p>
+                            <a href="https://buttondown.com" target="_blank">
+                            Powered by Buttondown.
+                            </a>
+                            </p>
+                          </form>
                       </div>
                       <div class="social">
                           <h4>{% t footer.comm %}</h4>
