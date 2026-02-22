@@ -55,6 +55,8 @@ Currently Cedric-Crispin is the only pool with [Spark Address payout support](ht
     * stratum.kriptokyng.com:1094 (SOLO)
 * [Pooly](https://pooly.ca/)
   	* stratum+tcp://pooly.ca:3094 (PPLNS)
+* [Meowpool](https://meowpool.duckdns.org/)
+  	* stratum+tcp://meowpool.duckdns.org:7278
 
 * For detailed stratum information, please visit the pool's own site.
 
