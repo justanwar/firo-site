@@ -44,3 +44,5 @@ Log notice stdout
 ```
 
 If successful, you can check for .onion address when running the `getnetworkinfo` RPC command.
+
+If you want to connect to and only to Onion peers, please add `onlynet=onion` to `firo.conf`. Please note that you might need to manually add peers in this mode.
